@@ -25,36 +25,35 @@ How to run this project :
 
 -------------------------------------
 
-answer for question 1 : localhost:8080/question1?input=bestCrimeMovies=theGuilty;bestComedyMovies=shaolinSoccer;bestActionMovies=IronMan;
+1. Answer for Question 1 
+   - API : localhost:8080/question1?input=bestCrimeMovies=theGuilty;bestComedyMovies=shaolinSoccer;bestActionMovies=IronMan;
 
-result : 
-Status:200 OK
-Time:392 ms
-Size:287 B
+   - result : 
+   - Time:392 ms , Size:287 B
 
-"answerNo1": {
+   - "answerNo1": {
         "bestComedyMovies": "shaolinSoccer",
         "bestActionMovies": "IronMan",
         "bestCrimeMovies": "theGuilty"
-}
+      }
 
-answer for question 3
+2. Answer for Question 3
 
-Data user :
+ - Data user :
 
-INSERT INTO `user` (`id`,`version`,`email`,`name`,`password`,`role_id`,`created_by`,`date_created`,`last_updated`,`updated_by`) VALUES (1,0,'admin@store.com','Admin_1','1234',1,NULL,'2017-01-01 00:00:00',NULL,NULL);
-INSERT INTO `user` (`id`,`version`,`email`,`name`,`password`,`role_id`,`created_by`,`date_created`,`last_updated`,`updated_by`) VALUES (2,0,'employee@store.com','Employee_1','1234',2,'1','2017-01-01 00:00:00',NULL,NULL);
-INSERT INTO `user` (`id`,`version`,`email`,`name`,`password`,`role_id`,`created_by`,`date_created`,`last_updated`,`updated_by`) VALUES (3,0,'affiliate@store.com','Affiliate 1','1234',3,'1','2017-01-01 00:00:00',NULL,NULL);
-INSERT INTO `user` (`id`,`version`,`email`,`name`,`password`,`role_id`,`created_by`,`date_created`,`last_updated`,`updated_by`) VALUES (4,0,'user@store.com','User 1','1234',4,'1','2017-05-09 00:00:00',NULL,NULL);
-INSERT INTO `user` (`id`,`version`,`email`,`name`,`password`,`role_id`,`created_by`,`date_created`,`last_updated`,`updated_by`) VALUES (5,0,'user@store.com','User 1','1234',4,'1','2019-05-09 00:00:00',NULL,NULL);
+- INSERT INTO `user` (`id`,`version`,`email`,`name`,`password`,`role_id`,`created_by`,`date_created`,`last_updated`,`updated_by`) VALUES (1,0,'admin@store.com','Admin_1','1234',1,NULL,'2017-01-01 00:00:00',NULL,NULL);
+- INSERT INTO `user` (`id`,`version`,`email`,`name`,`password`,`role_id`,`created_by`,`date_created`,`last_updated`,`updated_by`) VALUES (2,0,'employee@store.com','Employee_1','1234',2,'1','2017-01-01 00:00:00',NULL,NULL);
+- INSERT INTO `user` (`id`,`version`,`email`,`name`,`password`,`role_id`,`created_by`,`date_created`,`last_updated`,`updated_by`) VALUES (3,0,'affiliate@store.com','Affiliate 1','1234',3,'1','2017-01-01 00:00:00',NULL,NULL);
+- INSERT INTO `user` (`id`,`version`,`email`,`name`,`password`,`role_id`,`created_by`,`date_created`,`last_updated`,`updated_by`) VALUES (4,0,'user@store.com','User 1','1234',4,'1','2017-05-09 00:00:00',NULL,NULL);
+- INSERT INTO `user` (`id`,`version`,`email`,`name`,`password`,`role_id`,`created_by`,`date_created`,`last_updated`,`updated_by`) VALUES (5,0,'user@store.com','User 1','1234',4,'1','2019-05-09 00:00:00',NULL,NULL);
 
 
-Data role :
+- Data role :
 
-INSERT INTO `role` (`id`,`version`,`name`) VALUES (1,0,'ROLE_ADMIN');
-INSERT INTO `role` (`id`,`version`,`name`) VALUES (2,0,'ROLE_EMPLOYEE');
-INSERT INTO `role` (`id`,`version`,`name`) VALUES (3,0,'ROLE_AFFILIATE');
-INSERT INTO `role` (`id`,`version`,`name`) VALUES (4,0,'ROLE_USER');
+- INSERT INTO `role` (`id`,`version`,`name`) VALUES (1,0,'ROLE_ADMIN');
+- INSERT INTO `role` (`id`,`version`,`name`) VALUES (2,0,'ROLE_EMPLOYEE');
+- INSERT INTO `role` (`id`,`version`,`name`) VALUES (3,0,'ROLE_AFFILIATE');
+- INSERT INTO `role` (`id`,`version`,`name`) VALUES (4,0,'ROLE_USER');
 
 1. http://localhost:8080/totalPay?totalPrice=810&userId=2
     - user 2 : role = employee , get discount 30%
