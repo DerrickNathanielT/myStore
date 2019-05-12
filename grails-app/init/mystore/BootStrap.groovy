@@ -1,0 +1,9 @@
+package mystore
+
+class BootStrap {
+
+    def init = { servletContext ->
+    }
+    def destroy = {
+    }
+}
