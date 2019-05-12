@@ -65,7 +65,7 @@ class DiscountService {
     }
 
     def totalBill(def params){
-        return params.totalPrice - getDiscountAmount(params)
+        return Double.valueOf(params.totalPrice) - getDiscountAmount(params)
     }
 
 
